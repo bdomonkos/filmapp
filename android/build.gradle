@@ -19,6 +19,9 @@ buildscript {
 }
 
 allprojects {
+    subprojects {
+        tasks.withType(Javadoc).all { enabled = false }
+    }
     repositories {
         mavenLocal()
         maven {
