@@ -2,8 +2,9 @@ import {StyleSheet} from 'react-native';
 
 const styles = {
   title: {
-    fontSize: 40,
-    fontStyle: 'italic',
+    fontSize: 20,
+    textAlign: 'center',
+    padding: 20,
   },
   description: {
     fontSize: 12,

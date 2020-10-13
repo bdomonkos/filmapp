@@ -37,7 +37,6 @@ export const SelectorService = {
     res: RootObject,
     state?: MovieConnection,
   ): Promise<MovieConnection> {
-
     const movieConnection = {} as MovieConnection;
     if (state) {
       if (res.data.movies.movie.similar !== null) {

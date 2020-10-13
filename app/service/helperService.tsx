@@ -91,7 +91,7 @@ export const Helperservice = {
         }   `;
   },
   getMoviesQuery(term: string, _cursor?: string, _first?: number): string {
-    const first = _first || SCROLL_NUMBER; 
+    const first = _first || SCROLL_NUMBER;
     const searchquery = !_cursor
       ? `term:"${term}",first:${first}`
       : `term:"${term}",first:${first},after:"${_cursor}"`;

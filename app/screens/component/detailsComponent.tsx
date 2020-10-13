@@ -19,8 +19,8 @@ export const DescriptionPageComponent: FC<DescriptionPage> = ({
   children,
 }): ReactElement => {
   return (
-    <View style={style.container}>
-      <Text style={style.description}>{title}</Text>
+    <View style={{height: '100%'}}>
+      <Text style={style.title}>{title}</Text>
       <Text style={style.description}>{description}</Text>
       <View style={style.container}>
         {imdbLink ? (
