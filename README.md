@@ -15,6 +15,13 @@ $ npm i -g @react-native-community/cli
 $ npm install
 ```
 
+#### Adding ios dependencies
+
+```sh
+$ cd ios
+$ pod install
+```
+
 #### Adding React Native Paper
 
 ```sh
