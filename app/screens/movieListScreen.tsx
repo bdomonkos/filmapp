@@ -81,6 +81,7 @@ const MovieListScreen = () => {
             response &&
             response.edges.map((l) => (
               <List.Item
+                key={l.node?.id}
                 onPress={() => {
                   navigation.navigate('DetailScreen', {
                     filmTitle: l.node?.originalTitle,
